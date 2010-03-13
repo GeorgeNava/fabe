@@ -1,0 +1,66 @@
+<html> 
+ 
+<head> 
+<title>FABE - Fricking Awesome Blog Engine</title> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+<link rel="alternate"  type="application/atom+xml" href="http://localhost/feed" title="FABE" /> 
+</head> 
+ 
+<body> 
+ 
+<div id="page"> 
+ 
+<div id="head"> 
+  <h1><a href=".">FABE</a></h1> 
+  <h2>Fricking Awesome Blog Engine</h2> 
+</div><!-- head --> 
+ 
+<div id="content"> 
+<div id="side"> 
+ 
+  <div class="panel"> 
+    <h1>Latest entries</h1> 
+    <ul> 
+    $code( for(post in data){ )
+      <li><a href="view/$(data[post].url)">$(data[post].title)</a></li> 
+    $code( } )
+    </ul> 
+  </div> 
+  <div class="panel"> 
+    <h1>My blog roll</h1> 
+    <ul> 
+      <li><a href="http://javascriptoid.appspot.com">Javascriptoid</a></li> 
+    </ul> 
+  </div> 
+  <div class="panel"> 
+    <h1>Admin Console</h1> 
+    <ul> 
+      <li><a href="newpost">New Post</a></li> 
+      <li><a href="newpost">Blog entries</a></li> 
+    </ul> 
+  </div> 
+ 
+</div><!-- side --> 
+ 
+<div id="main"> 
+$code( for(post in data){ )
+<div class="post"> 
+  <h1><a href="view/$(data[post].url)">$(data[post].title)</a></h1> 
+  <time>$(new Date(data[post].date).format('Y-m-d'))</time> 
+  <p>$(data[post].summary)</p> 
+  <p class="more"><a href="view/$(data[post].url)">Read more &raquo;</a></p> 
+</div> 
+$code( } )
+</div><!-- main --> 
+ 
+</div><!-- content --> 
+ 
+<div id="foot"> 
+  <p>&copy; 2010 - WTFPL - FABE</p> 
+</div> 
+ 
+</div><!-- page --> 
+ 
+</body> 
+ 
+</html>

@@ -1,0 +1,59 @@
+<html> 
+ 
+<head> 
+<title>FABE - Fricking Awesome Blog Engine</title> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+<script>
+function publish(){ document.forms[0].submit(); }
+function  cancel(){ window.location.href="."; }
+</script>
+</head> 
+ 
+<body> 
+ 
+<div id="page"> 
+ 
+<div id="head"> 
+  <h1><a href=".">FABE</a></h1> 
+  <h2>Fricking Awesome Blog Engine</h2> 
+</div><!-- head --> 
+ 
+<div id="content"> 
+<div id="side"> 
+ 
+  <div class="panel"> 
+    <h1>Actions</h1> 
+    <ul> 
+      <li><a href="javascript:publish()">Publish post</a></li> 
+      <li><a href="javascript:cancel()" >Cancel edition</a></li> 
+    </ul> 
+  </div> 
+
+</div><!-- side --> 
+ 
+<div id="main">
+
+<div class="post">
+  <h1>$(data.title)</h1>
+  <div>$(data.content)</div>
+  <form method="post" action="publish">
+    <input id="xtitle"   name="xtitle"   type="hidden" value="$(data.title)">
+    <input id="xcontent" name="xcontent" type="hidden" value="$(HTML.escape(data.content))">
+    <br><br>
+    <button onclick="publish()">Publish</button>
+  </form>
+</div><!-- post -->
+
+</div><!-- Main -->
+
+</div><!-- content --> 
+ 
+<div id="foot"> 
+  <p>&copy; 2010 - WTFPL - FABE</p> 
+</div> 
+ 
+</div><!-- page --> 
+ 
+</body> 
+ 
+</html>

@@ -1,0 +1,55 @@
+html,body{margin:0; padding:0; color:black; font:normal 1em verdana,helvetica,sans-serif; text-align:center;}
+time{color:#888; font-size:0.9em; margin:-34px 0 0; float:right;}
+pre{font-size:1.4em; line-height:1.2em; background:#F4FAFC; color:black; padding:12px; border:1px dashed #CCCCFF; overflow:auto;}
+code{font-size:1.4em; color:#006600;}
+small{color:#880000;}
+h1 a{text-decoration:none;}
+
+
+#page{margin:0 auto; width:936px; font-size:0.9em; text-align:left;}
+#head{padding:32px 12px 8px; color:#555; border-bottom:2px solid #1666CE;}
+#foot{color:#888; font:normal 1.0em monospace, 'courier new'; text-align:right; padding:18px 12px 10px; border-top:2px solid #1666ce; clear:both;}
+#content{margin:0; background:#F7F7F7;}
+#main{width:570px; min-height:600px; padding:24px 32px 0 12px; background:white; border-right:1px solid #CCC;}
+#side{width:290px; min-height:600px; float:right; padding:8px 15px 0px; /*background:#F7F7F7;*/}
+
+
+#head h1{margin:0; padding:0; font:bold   2.6em monospace, 'courier new'; }
+#head h2{margin:0; padding:0; font:normal 1.2em monospace, 'courier new'; }
+#head h1 a{color:#1666CE; text-decoration:none;}
+#head h1 a:visited{color:#1666CE;}
+
+
+.post{padding:12px 0; font-size:0.8em; line-height:1.6em;}
+.post h1{color:#555; margin-bottom:16px; border-bottom:1px solid #CCC; font:bold 1.8em Arial; letter-spacing:0.12em; text-shadow:1px 1px 1px #CCC;}
+.post h1 a{color:#555;}
+.post h1 a:hover{color:#FF6600;}
+.post p{text-align:justify;}
+.more a{color:#FF6600; text-decoration:none;}
+.more a:hover{text-decoration:underline;}
+
+
+.panel{padding:12px 6px 24px; font-size:0.8em; line-height:1.6em;}
+.panel h1{font:bold 1.4em Arial; color:#666; letter-spacing:-0.04em; border-bottom:1px dashed #AAA; text-shadow:1px 1px 1px #CCC;}
+.panel ul{margin:0; padding:0 18px;}
+.panel li{/*list-style-image:url(img/bullet.jpg);*/ color:black;}
+.panel li{list-style-type:square;}
+.panel li a{color:#1666ce; text-decoration:none;}
+.panel li a:hover{color:#FF6600; text-decoration:underline;}
+
+dl{}
+dt{font-size:0.8em; color:#2970A6; float:left; text-align:right; margin-right:10px; padding:2px;}
+dd{margin:1px 0; padding:2px 0;}
+
+
+/********** ADMIN **********/
+#xtitle  {width:560px;}
+#xcontent{width:560px; height:280px;}
+
+/********** CSS3 - Remove when ready **********/
+#content{ background: -moz-linear-gradient(left, lightgrey, white); }
+#content{ background: -webkit-gradient(linear, left center, right center, from(lightgrey), to(white)); }
+
+/********** DISQUS TWEAKS **********/
+.dsq-subscribe-label{font-size:0.8em;}
+#disqus_thread{border-top:1px solid #CCC;}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>FABE</title>
+  <subtitle>Fricking Awesome Blog Engine</subtitle>
+  <link href="http://localhost/fabe" />
+  <link href="http://localhost/fabe/feed.xml" rel="self" />
+  <id>http://www.example.com/fabe</id>
+  <updated>$(data.updated)</updated>
+  <author><name>Anonymous</name></author>
+
+$code( for(i in data.entries){ )
+  <entry>
+    <title>$(data.entries[i].title)</title>
+    <id>http://localhost/fabe/view/$(data.entries[i].url)</id>
+    <link href="http://localhost/fabe/view/$(data.entries[i].url)" />
+    <updated>$(data.entries[i].date)</updated>
+    <summary>
+      $(data.entries[i].summary)
+    </summary>
+  </entry>
+$code( } )
+
+</feed>
