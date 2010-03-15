@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+Options +Indexes
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+# hide .jss extension
+RewriteRule ^([^\.]+)$ $1.jss [NC,L]
+
+# prettify urls
+RewriteRule ^view/([a-z0-9]+) view.jss?url=$1
+RewriteRule ^edit/([a-z0-9]+) edit.jss?url=$1
