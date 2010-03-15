@@ -1,5 +1,7 @@
-FABE - Fricking Awesome Blog Engine
-===================================
+FABE.js
+=======
+Fricking Awesome Blog Engine
+----------------------------
 
 A basic yet complete blog engine to demonstrate the power and simplicity of Javascript on the server, using V8, the fastest JS engine, and V8CGI the easiest library to get you up and running in no time.
 
