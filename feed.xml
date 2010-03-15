@@ -2,118 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>FABE</title>
   <subtitle>Fricking Awesome Blog Engine</subtitle>
-  <link href="http://www.example.com/fabe" />
-  <link href="http://www.example.com/fabe/feed.jss" rel="self" />
+  <link href="http://localhost/fabe" />
+  <link href="http://localhost/fabe/feed.xml" rel="self" />
   <id>http://www.example.com/fabe</id>
-  <updated>2010-03-11T19:35:18+00:00</updated>
+  <updated>2010-03-15T20:11:05+00:00</updated>
   <author><name>Anonymous</name></author>
 
 
   <entry>
-    <title>Untitled 1268336101646</title>
-    <id>http://www.example.com/fabe/view.jss?post=untitled1268336101646</id>
-    <link href="http://www.example.com/fabe/view.jss?post=untitled1268336101646" />
-    <updated>2010-03-11 19:35:18</updated>
-    <summary type="xhtml">
-      <div>
-        test
-      </div>
+    <title>lasty</title>
+    <id>http://localhost/fabe/view/lasty</id>
+    <link href="http://localhost/fabe/view/lasty" />
+    <updated>2010-03-15 20:11:05</updated>
+    <summary>
+      nothing else to say...
     </summary>
   </entry>
 
   <entry>
     <title>My first hack</title>
-    <id>http://www.example.com/fabe/view.jss?post=myfirsthack</id>
-    <link href="http://www.example.com/fabe/view.jss?post=myfirsthack" />
+    <id>http://localhost/fabe/view/myfirsthack</id>
+    <link href="http://localhost/fabe/view/myfirsthack" />
     <updated>2010-02-23 18:30:00</updated>
-    <summary type="xhtml">
-      <div>
-          <p>You hear the V8 engine roaring and all you want to do is open your prefered editor and type this furiously:</p>
-<pre> 
-response.write('&lt;h1>Hello world!&lt;/h1>');<br>
-</pre>
-  <p>This can't be it, but believe it or not, this is it!</p>
-  <p>So save it as <code>helloworld.jss</code> and open up your browser pointing to that file. Ain't that a beauty?</p>
-  <p>Your eyes won't believe it, so let's try something more and add this code to the file:</p>
-<pre>
-days=['Sunday','Mon','Tue','Wed','Thu','TGIF','Caturday'];
-
-response.write('&lt;h3>Days of the week&lt;/h3>\n');
-
-for(day in days){
-  response.write('&lt;li>'+days[day]+'&lt;/li>\n');
-}
-</pre>
-  <p>Nice!</p>
-  <p>Hack away, sailor, the keyboard is your oar and the vast ocean is in front of you...</p>
-  <p><small>Some notes here: I will use .jss as extensions for my server-side code, some people use .ssjs, others .sjs but whatever floats your boat is ok with me.  If you need to change they way your extensions are handled, just refer to the previous post and change the Apache configuration for that.</small></p>
-
-      </div>
+    <summary>
+      For many years hackers have thought JS on the server was for pussies, an utopia, or just a toy. 
+ We will show them not only that it is a great tool for back-end development, but at the end of this d...
     </summary>
   </entry>
 
   <entry>
     <title>Installing V8 on your boxen!</title>
-    <id>http://www.example.com/fabe/view.jss?post=loremipsum</id>
-    <link href="http://www.example.com/fabe/view.jss?post=loremipsum" />
+    <id>http://localhost/fabe/view/loremipsum</id>
+    <link href="http://localhost/fabe/view/loremipsum" />
     <updated>2010-02-22 18:30:00</updated>
-    <summary type="xhtml">
-      <div>
-          <p>Easy, all you need to do is get the latest from the magnificent <a href="http://code.google.com/p/v8cgi/">V8CGI project</a>, which bundles the V8 engine and a lot of hacks and libraries to make you feel like at home.</p>
-  <p>Go go go! I'll be waiting impatiently...</p>
-  <p><small>We'll be covering windows installation only, since linux is too hard for some of us.<br> If you are a h4x0r already, go and have fun yourself, the console gives me the jeebies.</small></p>
-  <p>Now, after downloading it, just unpack it and move it to a folder, preferably closer to the root say <code>C:/v8cgi/</code>. We may be using the console (ugh!) but only for a simple test, and never again, I promise.</p>
-  <p>Modify <code>v8cgi.conf</code> with any text editor like notepad<sup>*</sup>, and update this line to reflect the folder where we just installed it: <br>
-     <pre>require.paths.push("c:/v8cgi/lib");</pre>
-  </p>
-  <p>Now copy the file <code>v8cgi.conf</code> to the root <code>C:/</code></p>
-  <p>Add these two lines at the end of Apache config file: <br>
-     (usually <code>C:/Program Files/Apache/conf/httpd.conf</code>)</p>
-<pre>
-LoadModule v8cgi_module "c:/v8cgi/mod_v8cgi.dll" 
-AddHandler v8cgi-script .jss 
-</pre>
-  <p>And that's it!</p>
-  <p> Restart Apache, or restart your computer (we are used to it) so we can start playing with our puppy in the next post.</p>
-  <p><small>* I'll be using <a href="http://www.flos-freeware.ch/notepad2.html">Notepad2</a> for the rest of this tutorial but you can use whatever you want, even eclipse, photoshop, or pumping bytes right thru the serial port.</small></p>
-
-      </div>
+    <summary>
+      For many years hackers have thought JS on the server was for pussies, an utopia, or just a toy. 
+ We will show them not only that it is a great tool for back-end development, but at the end of this d...
     </summary>
   </entry>
 
   <entry>
     <title>Javascript on the server?</title>
-    <id>http://www.example.com/fabe/view.jss?post=javascriptontheserver</id>
-    <link href="http://www.example.com/fabe/view.jss?post=javascriptontheserver" />
+    <id>http://localhost/fabe/view/javascriptontheserver</id>
+    <link href="http://localhost/fabe/view/javascriptontheserver" />
     <updated>2010-02-21 15:27:41</updated>
-    <summary type="xhtml">
-      <div>
-          <p>I've learned to love JS more than any of the dozen languages I've proficiently learned thru my career.  So, when I heard JS was coming to the server and that we were going to code our wonderful web apps in one simple and beautiful language I couldn't but imagine all the good stuff I could build with my beloved JS.</p>
-  <p>After installing V8, the fastest JS engine on the planet, I plunged head first hacking like there was no tomorrow. Ooh it felt sooo sweet!</p>
-  <p>Here are my experiences, good and bad, in the hope they will help you understand my ecstasy and spread the love for JS.</p>
-  <p>Welcome to <b>Javascriptoid()</b> { JS on the server! }</p>
-  <p>In this blog you'll learn to install the latest technologies to run JS on the server, easily. I'll focus on V8 and V8CGI for their simplicity and blazing speed. There are many other libraries and engines like Rhino for java and SpiderMonkey for C, but being simplicity one of our mantras we will use V8, thanks to our Google friends, so we don't feel overwhelmed by the ton of stuff out there.</p>
-  <p>I guarantee you, the curious hacker, at the end of this blog you'll be running any javascript flavor on any OS distro of your choice.</p>
-
-      </div>
+    <summary>
+      For many years hackers have thought JS on the server was for pussies, an utopia, or just a toy. 
+ We will show them not only that it is a great tool for back-end development, but at the end of this d...
     </summary>
   </entry>
 
   <entry>
     <title>Hello world from FABE!</title>
-    <id>http://www.example.com/fabe/view.jss?post=helloworld</id>
-    <link href="http://www.example.com/fabe/view.jss?post=helloworld" />
+    <id>http://localhost/fabe/view/helloworld</id>
+    <link href="http://localhost/fabe/view/helloworld" />
     <updated>2010-02-20 15:26:17</updated>
-    <summary type="xhtml">
-      <div>
-          <p>For many years hackers have thought JS on the server was for pussies, an utopia, or just a toy. 
-     We will show them not only that it is a great tool for back-end development, but at the end of this decade, I dare to say, it will be one of the top three programming languages for the web.</p>
-  <p>It all started, little grasshoppers, centuries ago with the now defunct Netscape and their unsuccessful attempt to rule both the server and the client with the same code.</p> 
-  <p>Years have passed by, new languages came and went, and now all of a sudden, JS has been awaken stronger than ever.</p> 
-  <p>Millions of web designers who never attempted to cross the boundaries to the forbidden server, now feel empowered to try, test, and see the results of their hacks with awe in their faces like saying '<i>so this is it, it wasn't that hard at all!</i>'.</p>
-  <p>I'll be telling you our story, for I am one of them, and we are legion...</p>
-
-      </div>
+    <summary>
+      For many years hackers have thought JS on the server was for pussies, an utopia, or just a toy. 
+ We will show them not only that it is a great tool for back-end development, but at the end of this d...
     </summary>
   </entry>
 

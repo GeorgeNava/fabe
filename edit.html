@@ -1,0 +1,84 @@
+<html> 
+ 
+<head> 
+<title>FABE - Fricking Awesome Blog Engine</title> 
+<link rel="stylesheet" type="text/css" href="../style.css" /> 
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.8.0r4/build/editor/assets/skins/sam/simpleeditor.css">
+<script src="http://yui.yahooapis.com/combo?2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js&2.8.0r4/build/container/container_core-min.js&2.8.0r4/build/element/element-min.js&2.8.0r4/build/editor/simpleeditor-min.js"></script>
+
+<script>
+var myEditor,Dom,Event;
+function showEditor(control) {
+  Dom=YAHOO.util.Dom;
+  Event=YAHOO.util.Event;
+  var myConfig = {
+        width  : '560px',
+        height : '280px',
+        dompath: false,
+        focusAtStart: true
+  };
+  myEditor = new YAHOO.widget.SimpleEditor(control,myConfig);
+  myEditor.render();
+  myEditor._defaultToolbar.titlebar=''
+}
+
+function review(){ 
+  myEditor.saveHTML();
+  document.forms[0].submit(); 
+}
+function cancel(){ window.location.href="../admin"; }
+
+</script>
+</head> 
+ 
+<body> 
+ 
+<div id="page"> 
+ 
+<div id="head"> 
+  <h1><a href="..">FABE</a></h1> 
+  <h2>Fricking Awesome Blog Engine</h2> 
+</div><!-- head --> 
+ 
+<div id="content"> 
+
+<div id="side"> 
+ 
+  <div class="panel"> 
+    <h1>Actions</h1> 
+    <ul> 
+      <li><a href="javascript:review()">Review post</a></li> 
+      <li><a href="javascript:cancel()">Cancel edition</a></li> 
+    </ul> 
+  </div> 
+
+</div><!-- side --> 
+ 
+<div id="main">
+
+<div class="post">
+  <h1>$(data.post.title)</h1>
+  <form method="POST" action="../review" class="yui-skin-sam">
+    <input type="hidden" id="xtitle" name="xtitle" value="$(data.post.title)" />
+    <textarea id="xcontent" name="xcontent">$(data.post.content)</textarea>
+    <script>showEditor("xcontent");</script>
+    <!--style>yui-toolbar-group h3{display:none;}</style-->
+  </form>
+  <button onclick="review()">Review</button> 
+  <button onclick="cancel()">Cancel</button> 
+</div><!-- post -->
+
+</div><!-- Main -->
+
+</div><!-- content --> 
+ 
+<div id="foot"> 
+  <p>&copy; 2010 - WTFPL - FABE</p> 
+</div> 
+ 
+</div><!-- page --> 
+ 
+</body> 
+ 
+</html>
