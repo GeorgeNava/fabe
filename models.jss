@@ -38,7 +38,7 @@ function getPost(url){
 
 function updatePost(data){
   var sql,query,key;
-  query = "UPDATE posts set content='{content}', summary='{summary}'";
+  query = "UPDATE posts SET content='{content}', summary='{summary}' WHERE url='{url}'";
   sql   = new SQL();
   sql.execute(query,data);
   sql.disconnect();
